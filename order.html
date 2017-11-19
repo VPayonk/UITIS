@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your order</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="order">
+        <div class="container">
+            <h1>Your Order</h1>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'first')" id="defaultOpen">Order</button>
+                <button class="tablinks" onclick="openTab(event, 'second')">Open Orders</button>
+                <button class="tablinks" onclick="openTab(event, 'third')">Cancelled Orders</button>
+            </div>
+            <div id="first" class="tabcontent">
+                <div class="order-info">
+                    <div class="title">
+                        <div class="item">
+                            <h3>order placed</h3>
+                            <p>1 April 2017 3:46:07 PM</p>
+                        </div>
+                        <div class="item">
+                            <h3>total</h3>
+                            <p>$19 000</p>
+                        </div>
+                        <div class="item">
+                            <h3>dispatch to</h3>
+                            <p>James Taylor</p>
+                            <div class="tool">
+                                <p>E-mail: mike@yahoo.com</p>
+                                <p>Phone: 0905236526</p>
+                                <p>107 JOV Street</p>
+                                <p>Lagos, ZLM 123,Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>order#: <span>267-01-225</span></h3>
+                            <p>Order detais <span>Invoice</span></p>
+                            <div class="tool">
+                                <p>Invoice</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="buy">
+                        <div class="buy-title">
+                            <div class="status-info">
+                                <h3>Arriving 21 Apv - 25 Apv</h3>
+                                <p>Not yet dispatched</p>
+                            </div>
+                            <div class="but-groupe">
+                                <button>Canceled items</button>
+                                <button>View orders</button>
+                                <button>Write a review</button>
+                            </div>
+                        </div>
+                        <div class="article clearfix">
+                            <div class="photo">
+                                <img src="img/article1.png" alt="">
+                            </div>
+                            <div class="article-info">
+                                <h3>Tudor Heritage Black Bay</h3>
+                                <p>Men's Watches</p>
+                                <p>Size: S; Colour: Blue</p>
+                            </div>
+                            <div class="price">
+                                <p>$3’500.00</p>
+                                <button>Buy again</button>
+                            </div>
+                        </div>
+                        <div class="article clearfix">
+                            <div class="photo">
+                                <img src="img/article1.png" alt="">
+                            </div>
+                            <div class="article-info">
+                                <h3>Tudor Heritage Black Bay</h3>
+                                <p>Men's Watches</p>
+                                <p>Size: S; Colour: Blue</p>
+                            </div>
+                            <div class="price">
+                                <p>$3’500.00</p>
+                                <button>Buy again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-info">
+                    <div class="title">
+                        <div class="item">
+                            <h3>order placed</h3>
+                            <p>1 April 2017 3:46:07 PM</p>
+                        </div>
+                        <div class="item">
+                            <h3>total</h3>
+                            <p>$19 000</p>
+                        </div>
+                        <div class="item">
+                            <h3>dispatch to</h3>
+                            <p>James Taylor</p>
+                            <div class="tool">
+                                <p>E-mail: mike@yahoo.com</p>
+                                <p>Phone: 0905236526</p>
+                                <p>107 JOV Street</p>
+                                <p>Lagos, ZLM 123,Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>order#: <span>267-01-225</span></h3>
+                            <p>Order detais <span>Invoice</span></p>
+                            <div class="tool">
+                                <p>Invoice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy-title">
+                            <div class="status-info">
+                                <h3>Delivered 29 Mar. 2017</h3>
+                                <p>Not yet dispatched</p>
+                            </div>
+                            <div class="but-groupe">
+                                <button>Canceled items</button>
+                                <button>View orders</button>
+                                <button>Write a review</button>
+                            </div>
+                        </div>
+                        <div class="article clearfix">
+                            <div class="photo">
+                                <img src="img/article1.png" alt="">
+                            </div>
+                            <div class="article-info">
+                                <h3>Tudor Heritage Black Bay</h3>
+                                <p>Men's Watches</p>
+                                <p>Size: S; Colour: Blue</p>
+                            </div>
+                            <div class="price">
+                                <p>$3’500.00</p>
+                                <button>Buy again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="prev"></a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#" class="next"></a>
+                    <button>load more</button>
+                </div>
+            </div>
+            <div id="second" class="tabcontent">
+                <h3>Open Orders</h3>
+            </div>
+            <div id="third" class="tabcontent">
+                <h3>Cancelled</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='js/flexmenu.min.js'></script>
+    <script src="js/script.js"></script>
+    <script>
+    function openTab(evt, tab) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tab).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium.ttf') format('truetype'), url('../fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fints/Montserrat-Regular.eot');
+    src: url('../fints/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fints/Montserrat-Regular.woff') format('woff'), url('../fints/Montserrat-Regular.ttf') format('truetype'), url('../fints/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url('../fonts/Montserrat-SemiBoldItalic.eot');
+    src: url('../fonts/Montserrat-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-SemiBoldItalic.woff') format('woff'), url('../fonts/Montserrat-SemiBoldItalic.ttf') format('truetype'), url('../fonts/Montserrat-SemiBoldItalic.svg#Montserrat-SemiBoldItalic') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro-Bold';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold.woff') format('woff'), url('../fonts/GothamPro-Bold.ttf') format('truetype'), url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+$mmedium: 'Montserrat-Medium';
+$mregular: 'Montserrat-Regular';
+$msemibold: 'Montserrat-SemiBold';
+$mitalic: 'Montserrat-SemiBoldItalic';
+$gbold: 'GothamPro-Bold';

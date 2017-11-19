@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal details</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="person">
+        <div class="container">
+            <h1>Personal details</h1>
+            <form action="">
+                <label for="f_name">First name*:</label>
+                <input type="text" name="f_name" id="f_name">
+                <label for="l_name">Last name*:</label>
+                <input type="text" name="l_name" id="l_name">
+                <div class="radio">
+                    <p>Gender:</p>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="birth">
+                    <p>Date of birth:</p>
+                    <select name="days" id="days"></select>
+                    <select name="months" id="months"></select>
+                    <select name="years" id="years"></select>
+                </div>
+                <div class="check">
+                    <p>Subscription:</p>
+                    <input type="checkbox" name="" id="leeter">
+                    <label for="leeter">Newsletter</label>
+                </div>
+                <button type="submit" class="save">Save details</button>
+                <button type="cancel" class="cancel">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='js/flexmenu.min.js'></script>
+    <script src="js/script.js"></script>
+    <script>
+    function injectSelect(sel, rowsObject) {
+        var opt, x;
+        sel.innerHTML = "";
+        for (x in rowsObject) {
+            opt = document.createElement("option");
+            opt.value = x;
+            opt.innerHTML = rowsObject[x];
+            sel.appendChild(opt);
+        }
+    }
+
+    function makeNumbersObject(from, to) {
+        var result = {},
+            x;
+        if (from > to) {
+            var z = from;
+            from = to;
+            to = z;
+        }
+        for (x = from; x <= to; x++) {
+            result[x] = x;
+        }
+        return result
+    }
+    injectSelect(document.getElementById("months"), {
+        jan: "January",
+        feb: "February",
+        mar: "March",
+        apr: "April",
+        may: "May",
+        jun: "June",
+        jul: "July",
+        avg: "August",
+        sep: "September",
+        okt: "October",
+        nov: "November",
+        dec: "December"
+    });
+    injectSelect(document.getElementById("years"), makeNumbersObject(1920, 2017));
+    injectSelect(document.getElementById("days"), makeNumbersObject(1, 31));
+    </script>
+</body>
+
+</html>

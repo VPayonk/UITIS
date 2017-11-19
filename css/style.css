@@ -1,0 +1,1988 @@
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fints/Montserrat-Regular.eot");
+  src: url("../fints/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fints/Montserrat-Regular.woff") format("woff"), url("../fints/Montserrat-Regular.ttf") format("truetype"), url("../fints/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'Montserrat-SemiBoldItalic';
+  src: url("../fonts/Montserrat-SemiBoldItalic.eot");
+  src: url("../fonts/Montserrat-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("../fonts/Montserrat-SemiBoldItalic.ttf") format("truetype"), url("../fonts/Montserrat-SemiBoldItalic.svg#Montserrat-SemiBoldItalic") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+* {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:focus {
+    outline: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 40px; }
+  .pagination a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    border: 2px solid #3a6494;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #3a6494; }
+    .pagination a.active {
+      border: none; }
+    .pagination a:hover {
+      border: 2px solid #7c98b9;
+      color: #7c98b9; }
+    .pagination a.prev {
+      background: url(../img/dark_arrow.png) center center no-repeat;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+      .pagination a.prev:hover {
+        background: url(../img/arrow2.png) center center no-repeat;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+    .pagination a.next {
+      background: url(../img/dark_arrow.png) center center no-repeat; }
+      .pagination a.next:hover {
+        background: url(../img/arrow2.png) center center no-repeat;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg); }
+  .pagination button {
+    display: none;
+    font-family: "Montserrat-SemiBold";
+    font-size: 13px;
+    color: #1f354e;
+    text-transform: uppercase;
+    background: #fff;
+    width: 183px;
+    height: 51px;
+    border: 2px solid #1f354e;
+    border-radius: 2px; }
+    .pagination button:hover {
+      background: #1f354e;
+      color: #fff; }
+    .pagination button:focus {
+      outline: none; }
+
+/*HEADER BEGIN*/
+header {
+  width: 100%;
+  height: 162px;
+  background-color: #3a6494; }
+  header .container {
+    padding: 15px 20px 20px 15px;
+    height: 162px; }
+    header .container .top-menu {
+      display: inline-block;
+      width: 415px;
+      float: right;
+      font-family: "Montserrat-Medium";
+      color: #fff;
+      font-size: 12px; }
+      header .container .top-menu select {
+        width: 94px;
+        margin-right: 19px;
+        background: url(../img/arrow1.png);
+        background-position: 82px 4px;
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+        appearance: none;
+        /* remove arrow        */
+        -webkit-appearance: none;
+        /* remove arrow Chrome */
+        -moz-appearance: none;
+        /* remove arrow FF     */
+        font-family: "Montserrat-Medium";
+        color: #fff;
+        font-size: 12px; }
+        header .container .top-menu select:hover {
+          background-image: url(../img/arrow3.png);
+          color: #89c0ff; }
+        header .container .top-menu select:focus {
+          background-image: url(../img/arrow2.png);
+          color: #89c0ff; }
+          header .container .top-menu select:focus option {
+            border: none;
+            outline: none;
+            background-color: #3a6494;
+            color: #89c0ff; }
+      header .container .top-menu a {
+        color: #fff;
+        margin-right: 18px; }
+        header .container .top-menu a:hover {
+          color: #89c0ff; }
+        header .container .top-menu a:last-of-type {
+          background: url(../img/User.png) top right no-repeat;
+          width: 63px;
+          padding-right: 24px;
+          margin-right: 0; }
+          header .container .top-menu a:last-of-type:hover {
+            background: url(../img/User1.png) top right no-repeat; }
+    header .container .center-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 46px;
+      margin-top: 34px; }
+      header .container .center-menu .logo {
+        width: 104px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        header .container .center-menu .logo img {
+          width: 42px;
+          height: 42px;
+          margin-left: -4px; }
+        header .container .center-menu .logo span {
+          font-family: "GothamPro-Bold";
+          font-size: 21px;
+          color: #fff;
+          text-transform: uppercase; }
+      header .container .center-menu form {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        width: 73%;
+        max-width: 830px; }
+        header .container .center-menu form input:hover, header .container .center-menu form input:focus {
+          outline: none; }
+        header .container .center-menu form input:first-of-type {
+          width: 100%;
+          max-width: 735px;
+          padding: 17px;
+          border: none;
+          border-radius: 3px 0 0 3px;
+          font-family: "Montserrat-Regular";
+          font-size: 15px;
+          color: #bcbcbc; }
+          header .container .center-menu form input:first-of-type::-webkit-input-placeholder {
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+            color: #bcbcbc; }
+          header .container .center-menu form input:first-of-type:-moz-placeholder {
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+            color: #bcbcbc; }
+          header .container .center-menu form input:first-of-type::-moz-placeholder {
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+            color: #bcbcbc; }
+          header .container .center-menu form input:first-of-type:-ms-input-placeholder {
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+            color: #bcbcbc; }
+        header .container .center-menu form input:last-of-type {
+          width: 100%;
+          max-width: 95px;
+          border: none;
+          border-radius: 0 3px 3px 0;
+          background-color: #3a8be7;
+          background-image: url(../img/Search.png);
+          background-position: center center;
+          background-repeat: no-repeat; }
+      header .container .center-menu button {
+        position: relative;
+        width: 155px;
+        border: none;
+        border-radius: 3px;
+        background-color: #3a8be7;
+        background-image: url(../img/shopping.png);
+        background-position: 13px center;
+        background-repeat: no-repeat;
+        font-family: "Montserrat-Medium";
+        font-size: 14px;
+        color: #fff; }
+        header .container .center-menu button div {
+          position: absolute;
+          right: 13px;
+          top: 11px;
+          font-size: 15px;
+          line-height: 26px;
+          width: 26px;
+          height: 26px;
+          border-radius: 2px;
+          background-color: #3a6494; }
+        header .container .center-menu button:hover, header .container .center-menu button:focus {
+          outline: none; }
+    header .container .mobile-menu {
+      display: none; }
+    header .container .nav {
+      position: relative;
+      margin-top: 33px; }
+      header .container .nav .priority-nav__wrapper {
+        position: static; }
+      header .container .nav .dropdown-btn {
+        position: absolute;
+        right: 0;
+        float: right;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px; }
+        header .container .nav .dropdown-btn:hover {
+          color: #89c0ff; }
+        header .container .nav .dropdown-btn:focus {
+          color: #89c0ff;
+          outline: none; }
+      header .container .nav .dropdown {
+        position: absolute;
+        right: -20px;
+        top: 34px;
+        width: auto;
+        z-index: 100;
+        background-color: #3a6494;
+        list-style-type: none;
+        padding: 0 8px;
+        text-align: right; }
+        header .container .nav .dropdown li {
+          padding: 1px 0;
+          margin: 0; }
+          header .container .nav .dropdown li:hover ul {
+            position: static;
+            padding: 0;
+            border-top: 2px solid #89c0ff;
+            border-bottom: 2px solid #fff; }
+          header .container .nav .dropdown li a {
+            background-image: none;
+            padding-right: 0; }
+      header .container .nav ul, header .container .nav .menu {
+        width: 100%; }
+        header .container .nav ul li, header .container .nav .menu li {
+          position: relative;
+          margin-right: 34px; }
+          header .container .nav ul li:hover a, header .container .nav .menu li:hover a {
+            color: #89c0ff;
+            background-image: url(../img/arrow2.png); }
+          header .container .nav ul li:hover ul, header .container .nav .menu li:hover ul {
+            opacity: 1;
+            left: 0;
+            background-color: #3a6494;
+            padding: 0 5px; }
+            header .container .nav ul li:hover ul li, header .container .nav .menu li:hover ul li {
+              list-style-type: none;
+              margin-left: 0;
+              padding: 1px 0; }
+              header .container .nav ul li:hover ul li a, header .container .nav .menu li:hover ul li a {
+                color: #fff;
+                background-image: none;
+                white-space: nowrap; }
+                header .container .nav ul li:hover ul li a:hover, header .container .nav .menu li:hover ul li a:hover {
+                  color: #89c0ff;
+                  /* border-bottom: 2px solid;*/ }
+          header .container .nav ul li:last-child, header .container .nav .menu li:last-child {
+            margin: 0; }
+          header .container .nav ul li ul, header .container .nav .menu li ul {
+            position: absolute;
+            left: -9999px;
+            opacity: 0; }
+          header .container .nav ul li a, header .container .nav .menu li a {
+            /* position: relative;*/
+            font-family: "Montserrat-Medium";
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            background-image: url(../img/arrow1.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+            padding-right: 22px; }
+
+/*FOOTER BEGIN*/
+footer {
+  background-color: #fff;
+  border-top: 1px solid #f1f6f9; }
+  footer .container {
+    padding: 55px 15px 30px; }
+    footer .container .foot-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-bottom: 45px;
+      border-bottom: 1px solid #f1f6f9; }
+      footer .container .foot-info .left-col {
+        max-width: 235px;
+        text-align: left; }
+        footer .container .foot-info .left-col h4 {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #3a6494;
+          margin-bottom: 25px; }
+          footer .container .foot-info .left-col h4 span {
+            font-family: "GothamPro-Bold";
+            text-transform: uppercase;
+            font-size: 15px; }
+        footer .container .foot-info .left-col p {
+          font-family: "Montserrat-Regular";
+          font-size: 13px;
+          line-height: 24px;
+          color: #95a5b1; }
+      footer .container .foot-info .center-col {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 435px; }
+        footer .container .foot-info .center-col .col {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #1f354e; }
+          footer .container .foot-info .center-col .col h4 {
+            font-family: "Montserrat-SemiBold";
+            text-transform: uppercase; }
+          footer .container .foot-info .center-col .col li {
+            list-style-type: none;
+            margin-top: 20px; }
+            footer .container .foot-info .center-col .col li:first-of-type {
+              margin-top: 25px; }
+            footer .container .foot-info .center-col .col li a {
+              color: #1f354e; }
+              footer .container .foot-info .center-col .col li a:hover {
+                color: #14abf4; }
+              footer .container .foot-info .center-col .col li a:focus {
+                outline: none; }
+      footer .container .foot-info .right-col {
+        width: 100%;
+        max-width: 220px;
+        color: #1f354e;
+        text-align: right; }
+        footer .container .foot-info .right-col .number {
+          font-family: "Montserrat-SemiBold";
+          font-size: 24px; }
+        footer .container .foot-info .right-col p {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          margin: 20px 0 40px; }
+        footer .container .foot-info .right-col .social {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          footer .container .foot-info .right-col .social .icon {
+            width: 30px;
+            height: 31px;
+            background-image: url(../img/social.png);
+            background-repeat: no-repeat; }
+            footer .container .foot-info .right-col .social .icon:hover {
+              background-image: url(../img/social-hover.png); }
+            footer .container .foot-info .right-col .social .icon.face {
+              background-position: 0 0; }
+            footer .container .foot-info .right-col .social .icon.twit {
+              background-position: -39px 0; }
+            footer .container .foot-info .right-col .social .icon.pint {
+              background-position: -76px 0; }
+            footer .container .foot-info .right-col .social .icon.snap {
+              background-position: -113px 0; }
+            footer .container .foot-info .right-col .social .icon.inst {
+              background-position: -151px 0; }
+            footer .container .foot-info .right-col .social .icon.tumb {
+              background-position: -191px 0; }
+            footer .container .foot-info .right-col .social .icon a {
+              display: block;
+              width: 30px;
+              height: 31px;
+              z-index: 15; }
+              footer .container .foot-info .right-col .social .icon a:focus {
+                outline: none; }
+    footer .container .copyright {
+      padding-top: 20px;
+      font-family: "Montserrat-Regular";
+      font-size: 12px;
+      color: #999999;
+      text-align: center;
+      vertical-align: center; }
+
+/* HELP BEGIN*/
+.content {
+  background-color: #eff5fa;
+  padding: 30px 0 25px; }
+  .content .container {
+    background-color: #fff;
+    padding: 25px 20px 25px 15px; }
+    .content .container h1 {
+      font-family: "Montserrat-Medium";
+      font-size: 26px;
+      color: #21456d;
+      margin-bottom: 20px; }
+    .content .container h2 {
+      display: none; }
+    .content .container .accordion {
+      position: relative;
+      list-style-type: none;
+      width: 100%;
+      height: 41px;
+      background-color: #eff5fa;
+      border: 1px solid #f1f6f9;
+      border-radius: 2px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-top: 10px;
+      padding-left: 35px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      line-height: 41px;
+      text-align: left;
+      outline: none;
+      color: #3a6494; }
+      .content .container .accordion:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/dark_arrow.png);
+        width: 7px;
+        height: 12px;
+        top: 13px;
+        right: 24px; }
+    .content .container .active:after {
+      content: '';
+      position: absolute;
+      background-image: url(../img/dark_arrow.png);
+      width: 7px;
+      height: 12px;
+      top: 13px;
+      right: 24px;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .content .container ul {
+      display: none; }
+      .content .container ul li {
+        list-style-type: none; }
+    .content .container .acord-cont {
+      display: none; }
+      .content .container .acord-cont .accordion {
+        font-family: "Montserrat-SemiBold";
+        background-color: #fff;
+        height: 48px;
+        margin-top: 0;
+        border: none; }
+        .content .container .acord-cont .accordion:after {
+          content: '';
+          position: absolute;
+          background-image: url(../img/plus.png);
+          width: 12px;
+          height: 12 px;
+          top: 17px;
+          right: 24px; }
+      .content .container .acord-cont .active:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/minus.png);
+        width: 12px;
+        height: 2px;
+        top: 22px;
+        right: 24px;
+        -webkit-transform: none;
+        transform: none; }
+    .content .container .info {
+      display: none;
+      padding: 36px 25px 25px 35px; }
+      .content .container .info p.text {
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.025em;
+        color: #3a6494; }
+      .content .container .info .all-ships {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 25px; }
+        .content .container .info .all-ships .ships {
+          margin-top: 40px; }
+          .content .container .info .all-ships .ships:first-of-type {
+            width: 100%;
+            max-width: 355px; }
+          .content .container .info .all-ships .ships:last-of-type {
+            width: 100%;
+            max-width: 705px; }
+          .content .container .info .all-ships .ships h3 {
+            font-family: "Montserrat-Medium";
+            font-size: 14px;
+            line-height: 42px;
+            color: #3a6494;
+            height: 42px;
+            background-color: #f1f6f9;
+            padding-left: 23px; }
+          .content .container .info .all-ships .ships .list {
+            padding: 15px 10px;
+            font-family: "Montserrat-Regular";
+            font-size: 14px;
+            line-height: 18px;
+            color: #3a6494;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+            .content .container .info .all-ships .ships .list h4 {
+              font-family: "Montserrat-SemiBold";
+              margin-bottom: 20px; }
+            .content .container .info .all-ships .ships .list .country {
+              float: left; }
+            .content .container .info .all-ships .ships .list .days {
+              float: right;
+              text-align: right; }
+          .content .container .info .all-ships .ships .many-list {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start; }
+            .content .container .info .all-ships .ships .many-list .list {
+              margin-right: 40px;
+              width: 50%; }
+    .content .container .line {
+      border-bottom: 1px solid #f1f6f9; }
+
+/* ADRESS BEGIN */
+.adress {
+  padding: 45px 0 80px; }
+  .adress .container .text {
+    margin-bottom: 40px; }
+    .adress .container .text h1 {
+      font-family: "Montserrat-Medium";
+      font-size: 26px;
+      color: #3a6494;
+      margin-bottom: 40px; }
+    .adress .container .text p {
+      font-family: "Montserrat-Regular";
+      font-size: 16px;
+      line-height: 18px;
+      color: #3a6494; }
+      .adress .container .text p:last-of-type {
+        margin-bottom: 55px; }
+    .adress .container .text a {
+      float: right;
+      width: 200px;
+      height: 41px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      line-height: 38px;
+      letter-spacing: 0.025em;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      border: 2px solid #3a6494;
+      border-radius: 2px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: #3a6494; }
+      .adress .container .text a:hover {
+        background-color: #fff;
+        color: #3a6494; }
+  .adress .container .info-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 75px; }
+    .adress .container .info-block .person-info {
+      max-width: 550px;
+      width: 100%;
+      height: 330px;
+      padding: 30px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      color: #3a6494;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .adress .container .info-block .person-info h3 {
+        font-family: "Montserrat-Medium";
+        font-size: 19px;
+        margin-bottom: 50px; }
+      .adress .container .info-block .person-info p {
+        font-family: "Montserrat-Regular";
+        font-size: 15px;
+        line-height: 20px; }
+        .adress .container .info-block .person-info p:last-of-type {
+          margin-bottom: 70px; }
+      .adress .container .info-block .person-info button {
+        font-family: "Montserrat-SemiBold";
+        font-size: 13px;
+        color: #3a6494;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        margin-left: 35px; }
+        .adress .container .info-block .person-info button:first-of-type {
+          margin-left: 0; }
+        .adress .container .info-block .person-info button.edit {
+          padding-left: 22px;
+          background: url(../img/penc.png) center left no-repeat; }
+          .adress .container .info-block .person-info button.edit:hover {
+            background: url(../img/penc-hover.png) center left no-repeat; }
+        .adress .container .info-block .person-info button.delet {
+          padding-left: 18px;
+          background: url(../img/delete.png) center left no-repeat; }
+          .adress .container .info-block .person-info button.delet:hover {
+            background: url(../img/delete-hover.png) center left no-repeat; }
+        .adress .container .info-block .person-info button.default {
+          padding-left: 15px;
+          background: url(../img/mark.png) center left no-repeat; }
+          .adress .container .info-block .person-info button.default:hover {
+            background: url(../img/mark-hover.png) center left no-repeat; }
+        .adress .container .info-block .person-info button:focus {
+          outline: none; }
+        .adress .container .info-block .person-info button:hover {
+          color: #7c98b9; }
+
+/* ADRESS_FORM BEGIN*/
+.adress-form {
+  padding: 35px 0 40px; }
+  .adress-form .container {
+    max-width: 515px; }
+    .adress-form .container h1 {
+      font-family: "Montserrat-SemiBold";
+      font-size: 26px;
+      color: #3a6494;
+      margin-bottom: 75px; }
+    .adress-form .container input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 15px 0 30px;
+      padding-left: 15px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .adress-form .container input:first-of-type, .adress-form .container input:nth-of-type(2) {
+        padding-left: 40px;
+        background: url(../img/User-grey.png) 16px center no-repeat; }
+      .adress-form .container input:nth-of-type(3) {
+        padding-left: 40px;
+        background: url(../img/lock.png) 16px center no-repeat; }
+      .adress-form .container input:focus {
+        border: 1px solid #396494;
+        outline: none; }
+    .adress-form .container select {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 15px 0 30px;
+      padding-left: 15px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      appearance: none;
+      /* remove arrow        */
+      -webkit-appearance: none;
+      /* remove arrow Chrome */
+      -moz-appearance: none;
+      /* remove arrow FF     */
+      background: url(../img/arrow3.png) calc(100% - 13px) center no-repeat; }
+      .adress-form .container select:focus {
+        background: url(../img/arrow2.png) calc(100% - 13px) center no-repeat;
+        border: 1px solid #396494;
+        outline: none; }
+    .adress-form .container button {
+      width: 215px;
+      height: 60px;
+      border: 2px solid #3a6494;
+      border-radius: 2px;
+      margin: 0 12px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      text-transform: uppercase; }
+      .adress-form .container button:focus {
+        outline: none; }
+      .adress-form .container button.save {
+        color: #fff;
+        background-color: #3a6494; }
+        .adress-form .container button.save:hover {
+          color: #3a6494;
+          background-color: #fff; }
+      .adress-form .container button.cancel {
+        color: #3a6494;
+        background-color: #fff; }
+        .adress-form .container button.cancel:hover {
+          color: #fff;
+          background-color: #3a6494; }
+
+/* CONTACT AS*/
+.contact {
+  padding: 45px 0 50px; }
+  .contact .container {
+    max-width: 515px; }
+    .contact .container h1 {
+      font-family: "Montserrat-Medium";
+      font-size: 26px;
+      color: #3a6494;
+      margin-bottom: 30px; }
+    .contact .container p {
+      font-family: "Montserrat-Medium";
+      font-size: 14px;
+      color: #a0a6ae;
+      margin-bottom: 40px; }
+      .contact .container p.mail {
+        text-align: center;
+        margin: 0; }
+    .contact .container label {
+      font-family: "Montserrat-Medium";
+      font-size: 14px;
+      color: #3a6494; }
+    .contact .container input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 10px 0 30px;
+      padding-left: 15px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .contact .container input:first-of-type {
+        padding-left: 40px;
+        background: url(../img/User-grey.png) 16px center no-repeat; }
+      .contact .container input:nth-of-type(2) {
+        padding-left: 40px;
+        background: url(../img/lock.png) 16px center no-repeat; }
+      .contact .container input:focus {
+        border: 1px solid #396494;
+        outline: none; }
+    .contact .container select {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 15px 0 30px;
+      padding-left: 15px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      appearance: none;
+      /* remove arrow        */
+      -webkit-appearance: none;
+      /* remove arrow Chrome */
+      -moz-appearance: none;
+      /* remove arrow FF     */
+      background: url(../img/arrow3.png) calc(100% - 13px) center no-repeat; }
+      .contact .container select:focus {
+        background: url(../img/arrow2.png) calc(100% - 13px) center no-repeat;
+        border: 1px solid #396494;
+        outline: none; }
+    .contact .container textarea {
+      width: 100%;
+      height: 170px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 15px 0 45px;
+      padding: 1px 15px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      resize: none; }
+      .contact .container textarea:focus {
+        border: 1px solid #396494;
+        outline: none; }
+    .contact .container button {
+      display: block;
+      width: 185px;
+      height: 60px;
+      border: 2px solid #3a6494;
+      border-radius: 2px;
+      margin: 0 auto 25px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #3a6494; }
+      .contact .container button:hover {
+        color: #3a6494;
+        background-color: #fff; }
+      .contact .container button:focus {
+        outline: none; }
+
+.pass {
+  padding: 45px 0 60px; }
+  .pass .container {
+    max-width: 515px; }
+    .pass .container h1 {
+      font-family: "Montserrat-Medium";
+      font-size: 26px;
+      color: #3a6494;
+      text-align: center;
+      margin-bottom: 105px; }
+    .pass .container label {
+      font-family: "Montserrat-Medium";
+      font-size: 14px;
+      color: #3a6494; }
+    .pass .container input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 10px 0 30px;
+      padding-left: 15px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 40px;
+      background: url(../img/lock.png) 16px center no-repeat; }
+      .pass .container input:focus {
+        border: 1px solid #396494;
+        outline: none; }
+    .pass .container button {
+      display: block;
+      width: 305px;
+      height: 60px;
+      border: 2px solid #3a6494;
+      border-radius: 2px;
+      margin: 65px auto 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #3a6494; }
+      .pass .container button:hover {
+        color: #3a6494;
+        background-color: #fff; }
+      .pass .container button:focus {
+        outline: none; }
+
+.person {
+  padding: 43px 0 60px; }
+  .person .container {
+    max-width: 515px; }
+    .person .container h1 {
+      font-family: "Montserrat-Medium";
+      font-size: 26px;
+      color: #3a6494;
+      text-align: center;
+      margin-bottom: 105px; }
+    .person .container label {
+      font-family: "Montserrat-Medium";
+      font-size: 14px;
+      color: #3a6494; }
+    .person .container input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eff5fa;
+      border-radius: 2px;
+      margin: 10px 0 30px;
+      padding-left: 15px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      color: #3a6494;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 15px; }
+      .person .container input:focus {
+        border: 1px solid #396494;
+        outline: none; }
+    .person .container .radio {
+      margin-bottom: 50px; }
+      .person .container .radio p {
+        display: inline-block;
+        font-family: "Montserrat-Medium";
+        font-size: 14px;
+        color: #3a6494;
+        margin-right: 25px; }
+      .person .container .radio input {
+        display: none; }
+      .person .container .radio label {
+        position: relative;
+        margin-right: 45px;
+        padding-left: 25px; }
+        .person .container .radio label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 2px;
+          width: 13px;
+          height: 13px;
+          background-color: #f2f2f2;
+          border: 1px solid #d6d6d6;
+          border-radius: 13px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+      .person .container .radio input:checked + label:before {
+        content: "\2022";
+        color: #3a6494;
+        font-size: 36px;
+        text-align: center;
+        line-height: 5px; }
+    .person .container .birth {
+      margin-bottom: 30px; }
+      .person .container .birth p {
+        font-family: "Montserrat-Medium";
+        font-size: 14px;
+        color: #3a6494;
+        margin-bottom: 10px; }
+      .person .container .birth select {
+        height: 40px;
+        border: 1px solid #eff5fa;
+        border-radius: 2px;
+        padding-left: 15px;
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+        color: #3a6494;
+        appearance: none;
+        /* remove arrow        */
+        -webkit-appearance: none;
+        /* remove arrow Chrome */
+        -moz-appearance: none;
+        /* remove arrow FF     */
+        background: url(../img/arrow3.png) calc(100% - 13px) center no-repeat; }
+        .person .container .birth select:first-of-type {
+          width: 80px;
+          margin-right: 19px; }
+        .person .container .birth select:nth-of-type(2) {
+          width: 177px;
+          margin-right: 18px; }
+        .person .container .birth select:last-of-type {
+          width: 100px; }
+        .person .container .birth select:focus {
+          background: url(../img/arrow2.png) calc(100% - 13px) center no-repeat;
+          border: 1px solid #396494;
+          outline: none; }
+    .person .container .check {
+      margin-bottom: 90px; }
+      .person .container .check p {
+        font-family: "Montserrat-Medium";
+        font-size: 14px;
+        color: #3a6494;
+        margin-bottom: 20px; }
+      .person .container .check input {
+        display: none; }
+      .person .container .check label {
+        position: relative;
+        padding-left: 30px; }
+        .person .container .check label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 1px;
+          width: 16px;
+          height: 16px;
+          background-color: #3a6494;
+          border-radius: 1px; }
+      .person .container .check input:checked + label:before {
+        background: url(../img/checkbox-mark.png) center no-repeat;
+        background-color: #3a6494; }
+    .person .container button {
+      width: 215px;
+      height: 60px;
+      border: 2px solid #3a6494;
+      border-radius: 2px;
+      margin: 0 12px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      text-transform: uppercase; }
+      .person .container button:focus {
+        outline: none; }
+      .person .container button.save {
+        color: #fff;
+        background-color: #3a6494; }
+        .person .container button.save:hover {
+          color: #3a6494;
+          background-color: #fff; }
+      .person .container button.cancel {
+        color: #3a6494;
+        background-color: #fff; }
+        .person .container button.cancel:hover {
+          color: #fff;
+          background-color: #3a6494; }
+
+.order {
+  padding: 40px 0 55px; }
+  .order .container h1 {
+    font-family: "Montserrat-Medium";
+    font-size: 26px;
+    color: #3a6494;
+    margin-bottom: 60px; }
+  .order .container .tab {
+    border-bottom: 1px solid #f1f6f9;
+    margin-bottom: 25px; }
+    .order .container .tab button {
+      background: none;
+      border: none;
+      font-family: "Montserrat-SemiBold";
+      font-size: 18px;
+      color: #3a6494;
+      margin-left: 65px; }
+      .order .container .tab button.active {
+        color: #3a8be7;
+        border-bottom: 2px solid #3a8be7; }
+      .order .container .tab button:first-of-type {
+        margin-left: 0; }
+      .order .container .tab button:focus {
+        outline: none; }
+  .order .container .tabcontent {
+    display: none; }
+    .order .container .tabcontent .order-info {
+      margin-bottom: 30px;
+      border: 1px solid #f1f6f9;
+      border-radius: 2px; }
+      .order .container .tabcontent .order-info .title {
+        width: 100%;
+        padding: 20px 33px;
+        border-bottom: 1px solid #f1f6f9;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .order .container .tabcontent .order-info .title .item {
+          position: relative;
+          display: inline-block; }
+          .order .container .tabcontent .order-info .title .item h3 {
+            font-family: "Montserrat-SemiBold";
+            font-size: 16px;
+            color: #91a2b1;
+            text-transform: uppercase; }
+          .order .container .tabcontent .order-info .title .item p {
+            font-family: "Montserrat-Regular";
+            font-size: 14px;
+            color: #21456d; }
+          .order .container .tabcontent .order-info .title .item .tool {
+            position: absolute;
+            left: -75px;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: opacity 1s;
+            -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+            padding: 28px 40px;
+            margin-top: 26px;
+            border: 1px solid #bababa;
+            border-radius: 6px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.9);
+            -webkit-box-shadow: 0 0 19px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 19px rgba(0, 0, 0, 0.35);
+            z-index: 25; }
+            .order .container .tabcontent .order-info .title .item .tool:before {
+              content: '';
+              position: absolute;
+              top: -14px;
+              left: calc( 50% - 14px);
+              width: 28px;
+              height: 28px;
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+              background: rgba(255, 255, 255, 0.9);
+              -webkit-box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.35);
+              box-shadow: -5px -5px 19px rgba(0, 0, 0, 0.35);
+              z-index: 20; }
+            .order .container .tabcontent .order-info .title .item .tool p {
+              font-family: "Montserrat-Regular";
+              font-size: 14px;
+              color: #396494;
+              background: none !important;
+              white-space: nowrap; }
+          .order .container .tabcontent .order-info .title .item p:hover + .tool {
+            visibility: visible;
+            opacity: 1; }
+          .order .container .tabcontent .order-info .title .item:first-of-type {
+            margin-right: 120px; }
+          .order .container .tabcontent .order-info .title .item:nth-of-type(2) {
+            margin-right: 200px; }
+          .order .container .tabcontent .order-info .title .item:nth-of-type(3) {
+            margin-right: 170px; }
+            .order .container .tabcontent .order-info .title .item:nth-of-type(3) p {
+              background: url(../img/arrow-order.png) center right no-repeat; }
+          .order .container .tabcontent .order-info .title .item:last-of-type p {
+            background: url(../img/arrow-order.png) center right no-repeat; }
+            .order .container .tabcontent .order-info .title .item:last-of-type p span {
+              margin-left: 5px;
+              padding-left: 5px;
+              border-left: 1px solid #3a6494; }
+          .order .container .tabcontent .order-info .title .item:last-of-type .tool {
+            left: 40px; }
+      .order .container .tabcontent .order-info .buy {
+        padding: 25px 40px 0 20px; }
+        .order .container .tabcontent .order-info .buy .buy-title {
+          position: relative;
+          font-family: "Montserrat-Regular"; }
+          .order .container .tabcontent .order-info .buy .buy-title .status-info {
+            display: inline-block; }
+            .order .container .tabcontent .order-info .buy .buy-title .status-info h3 {
+              font-family: "Montserrat-Regular";
+              font-size: 16px;
+              color: #21456b; }
+            .order .container .tabcontent .order-info .buy .buy-title .status-info p {
+              font-family: "Montserrat-Regular";
+              font-size: 13px;
+              color: #7992a7; }
+          .order .container .tabcontent .order-info .buy .buy-title .but-groupe {
+            position: absolute;
+            right: 0;
+            top: -8px;
+            width: 444px;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .order .container .tabcontent .order-info .buy .buy-title .but-groupe button {
+              height: 41px;
+              padding: 0 21px;
+              border: 2px solid #3a6494;
+              border-radius: 2px;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              font-family: "Montserrat-Regular";
+              font-size: 14px;
+              letter-spacing: 0.025em;
+              color: #fff;
+              background-color: #3a6494; }
+              .order .container .tabcontent .order-info .buy .buy-title .but-groupe button:hover {
+                color: #3a6494;
+                background-color: #fff; }
+              .order .container .tabcontent .order-info .buy .buy-title .but-groupe button:focus {
+                outline: none; }
+        .order .container .tabcontent .order-info .buy .article {
+          padding: 25px 0 15px; }
+          .order .container .tabcontent .order-info .buy .article:last-of-type {
+            padding: 25px 0 30px; }
+          .order .container .tabcontent .order-info .buy .article .photo {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 109px;
+            height: 109px;
+            background-color: #e6edf3;
+            border-radius: 2px;
+            margin-right: 20px; }
+            .order .container .tabcontent .order-info .buy .article .photo img {
+              width: auto;
+              height: auto; }
+          .order .container .tabcontent .order-info .buy .article .article-info {
+            display: inline-block; }
+            .order .container .tabcontent .order-info .buy .article .article-info h3 {
+              font-family: "Montserrat-Medium";
+              font-size: 15px;
+              color: #21456b; }
+            .order .container .tabcontent .order-info .buy .article .article-info p {
+              font-family: "Montserrat-Regular";
+              font-size: 14px;
+              color: #94b2ca;
+              margin-top: 18px; }
+              .order .container .tabcontent .order-info .buy .article .article-info p:last-of-type {
+                color: #6e89a0;
+                margin-top: 13px; }
+          .order .container .tabcontent .order-info .buy .article .price {
+            display: inline-block;
+            float: right;
+            padding-top: 18px; }
+            .order .container .tabcontent .order-info .buy .article .price p {
+              font-family: "Montserrat-SemiBold";
+              font-size: 14px;
+              color: #3a6494;
+              text-align: right; }
+            .order .container .tabcontent .order-info .buy .article .price button {
+              height: 41px;
+              width: 142px;
+              margin-top: 12px;
+              padding: 0 21px;
+              border: 2px solid #3a6494;
+              border-radius: 2px;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              font-family: "Montserrat-Regular";
+              font-size: 14px;
+              text-transform: uppercase;
+              letter-spacing: 0.025em;
+              color: #3a6494;
+              background-color: #fff; }
+              .order .container .tabcontent .order-info .buy .article .price button:hover {
+                color: #fff;
+                background-color: #3a6494; }
+              .order .container .tabcontent .order-info .buy .article .price button:focus {
+                outline: none; }
+
+.wishlist {
+  padding: 40px 0 60px; }
+  .wishlist .container h1 {
+    display: inline-block;
+    font-family: "Montserrat-Medium";
+    font-size: 26px;
+    color: #3a6494;
+    margin-bottom: 30px; }
+  .wishlist .container .edit {
+    height: 20px;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #21456d;
+    background: transparent;
+    border: none;
+    background: url(../img/edit.png) center left no-repeat;
+    padding-left: 24px;
+    margin: 5px 35px 0 0;
+    float: right; }
+    .wishlist .container .edit:focus {
+      outline: none; }
+  .wishlist .container .bord {
+    border: 1px solid #eff5fa;
+    border-radius: 2px; }
+    .wishlist .container .bord .article-wish {
+      width: 100%;
+      padding: 30px 33px 30px 20px;
+      border-bottom: 1px solid #eff5fa;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .wishlist .container .bord .article-wish img {
+        width: 110px;
+        height: 153px;
+        margin-right: 20px;
+        float: left;
+        -o-object-fit: contain;
+        object-fit: contain; }
+      .wishlist .container .bord .article-wish .article-wish-info {
+        display: inline-block; }
+        .wishlist .container .bord .article-wish .article-wish-info h3 {
+          font-family: "Montserrat-SemiBold";
+          font-size: 18px;
+          color: #21456b; }
+        .wishlist .container .bord .article-wish .article-wish-info p {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #94b2ca;
+          margin-top: 15px; }
+          .wishlist .container .bord .article-wish .article-wish-info p:last-of-type {
+            font-family: "Montserrat-SemiBold";
+            color: #21456d; }
+      .wishlist .container .bord .article-wish button {
+        height: 41px;
+        width: 190px;
+        margin-top: 12px;
+        padding: 0 21px;
+        float: right;
+        border: 2px solid #3a6494;
+        border-radius: 2px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #3a6494;
+        background-color: #fff; }
+        .wishlist .container .bord .article-wish button:hover {
+          color: #fff;
+          background-color: #3a6494; }
+        .wishlist .container .bord .article-wish button:focus {
+          outline: none; }
+      .wishlist .container .bord .article-wish textarea {
+        width: 100%;
+        max-width: 955px;
+        height: 52px;
+        padding: 15px;
+        margin-top: 8px;
+        border: 1px solid #eff5fa;
+        border-radius: 2px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        resize: none; }
+        .wishlist .container .bord .article-wish textarea::-webkit-input-placeholder {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #cad4de; }
+        .wishlist .container .bord .article-wish textarea:-moz-placeholder {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #cad4de; }
+        .wishlist .container .bord .article-wish textarea::-moz-placeholder {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #cad4de; }
+        .wishlist .container .bord .article-wish textarea:-ms-input-placeholder {
+          font-family: "Montserrat-Regular";
+          font-size: 14px;
+          color: #cad4de; }
+        .wishlist .container .bord .article-wish textarea:focus {
+          outline: none; }
+      .wishlist .container .bord .article-wish .but {
+        float: right;
+        margin-top: 10px; }
+        .wishlist .container .bord .article-wish .but button {
+          width: auto;
+          height: auto;
+          font-family: "Montserrat-SemiBold";
+          font-size: 13px;
+          float: none;
+          border: none;
+          padding: 0;
+          margin: 0; }
+          .wishlist .container .bord .article-wish .but button:hover {
+            background: #fff;
+            color: #94b2ca; }
+          .wishlist .container .bord .article-wish .but button:last-of-type {
+            margin-left: 25px; }
+      .wishlist .container .bord .article-wish:last-of-type {
+        border: none; }
+
+@media screen and (max-width: 1199px) {
+  header .container .center-menu form {
+    width: 67%;
+    position: relative; }
+  header .container .nav .menu {
+    width: auto;
+    padding-right: 50px; }
+    header .container .nav .menu li:last-child {
+      /* margin-right: 60px;*/ }
+
+  .content .container .info .all-ships .ships .many-list .list {
+    margin-right: 0; }
+
+  footer .container .foot-info .center-col {
+    width: 33%; }
+
+  .order .container .tabcontent .order-info .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .order .container .tabcontent .order-info .title .item {
+      margin-right: 0 !important; } }
+@media (max-width: 991px) {
+  header .container .center-menu form {
+    width: 57%; }
+
+  .content .container .info .all-ships .ships .many-list {
+    display: inline-block;
+    width: 100%; }
+    .content .container .info .all-ships .ships .many-list .list {
+      width: 100%; }
+
+  .adress .container .info-block .person-info button {
+    margin-left: 20px; } }
+@media (max-width: 767px) {
+  header .container .center-menu .logo {
+    width: auto; }
+    header .container .center-menu .logo span {
+      display: none; }
+  header .container .center-menu form {
+    width: 67%; }
+  header .container .center-menu button {
+    width: 53px; }
+    header .container .center-menu button span {
+      display: none; }
+    header .container .center-menu button div {
+      right: 9px;
+      top: 8px;
+      width: 17px;
+      height: 17px;
+      font-size: 10px;
+      line-height: 13px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+
+  .content .container .accordion {
+    padding-left: 25px; }
+  .content .container .info {
+    padding: 25px 0 0 25px; }
+    .content .container .info .all-ships {
+      display: inline-block;
+      width: 100%; }
+      .content .container .info .all-ships .ships {
+        max-width: none !important; }
+
+  footer .container .foot-info {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 35px; }
+    footer .container .foot-info .left-col {
+      display: none; }
+    footer .container .foot-info .center-col {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 50px; }
+    footer .container .foot-info .right-col {
+      margin: 0 auto;
+      text-align: center; }
+      footer .container .foot-info .right-col p {
+        margin: 15px 0 30px; }
+
+  .order .container h1 {
+    margin-bottom: 30px; }
+  .order .container .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+    .order .container .tab button {
+      margin-left: 0 !important; }
+  .order .container .tabcontent .order-info .title {
+    display: inline-block;
+    padding: 15px 10px 20px 15px; }
+    .order .container .tabcontent .order-info .title .item {
+      width: 49%; }
+      .order .container .tabcontent .order-info .title .item:nth-of-type(2), .order .container .tabcontent .order-info .title .item:last-of-type {
+        text-align: right !important; }
+      .order .container .tabcontent .order-info .title .item:first-of-type, .order .container .tabcontent .order-info .title .item:nth-of-type(2) {
+        margin-bottom: 20px; }
+      .order .container .tabcontent .order-info .title .item p {
+        background: none !important; }
+      .order .container .tabcontent .order-info .title .item p:hover + .tool {
+        display: none; }
+  .order .container .tabcontent .order-info .buy {
+    padding: 20px; }
+    .order .container .tabcontent .order-info .buy .buy-title .status-info {
+      display: none; }
+    .order .container .tabcontent .order-info .buy .buy-title .but-groupe {
+      position: static;
+      width: 100%; }
+    .order .container .tabcontent .order-info .buy .article {
+      padding: 10px 0 !important; }
+      .order .container .tabcontent .order-info .buy .article .price {
+        padding-top: 0; }
+
+  .wishlist .container h1 {
+    width: 80%; }
+
+  .adress .container .info-block {
+    display: block; }
+
+  .person .container button {
+    margin: 0 4px; } }
+@media (max-width: 479px) {
+  header {
+    height: 175px; }
+    header .container {
+      padding: 14px 17px 27px 19px;
+      height: 175px; }
+      header .container .top-menu {
+        display: none; }
+      header .container .center-menu {
+        display: none; }
+      header .container .mobile-menu {
+        display: block; }
+        header .container .mobile-menu .top-mobile-menu {
+          height: 33px; }
+          header .container .mobile-menu .top-mobile-menu .hamburger {
+            display: inline-block;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+            width: 26px;
+            height: 19px;
+            margin: 7px 0; }
+            header .container .mobile-menu .top-mobile-menu .hamburger.active span:nth-child(1) {
+              opacity: 0; }
+            header .container .mobile-menu .top-mobile-menu .hamburger.active span:nth-child(2) {
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+            header .container .mobile-menu .top-mobile-menu .hamburger.active span:nth-child(3) {
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+            header .container .mobile-menu .top-mobile-menu .hamburger.active span:nth-child(4) {
+              opacity: 0; }
+            header .container .mobile-menu .top-mobile-menu .hamburger span {
+              width: 100%;
+              height: 3px;
+              background: #fff;
+              position: absolute;
+              display: block;
+              opacity: 1;
+              left: 0;
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+              -webkit-transition: .25s ease-in-out;
+              transition: .25s ease-in-out; }
+              header .container .mobile-menu .top-mobile-menu .hamburger span:nth-child(1) {
+                top: 0; }
+              header .container .mobile-menu .top-mobile-menu .hamburger span:nth-child(2), header .container .mobile-menu .top-mobile-menu .hamburger span:nth-child(3) {
+                top: 8px; }
+              header .container .mobile-menu .top-mobile-menu .hamburger span:nth-child(4) {
+                top: 16px; }
+          header .container .mobile-menu .top-mobile-menu .small-menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            padding: 0 10px;
+            background-color: #3a6494;
+            font-family: "Montserrat-Medium";
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase; }
+            header .container .mobile-menu .top-mobile-menu .small-menu li {
+              list-style-type: none;
+              margin: 2px 0; }
+              header .container .mobile-menu .top-mobile-menu .small-menu li select {
+                width: 116px;
+                background: url(../img/arrow1.png);
+                background-position: 104px 4px;
+                background-repeat: no-repeat;
+                border: none;
+                appearance: none;
+                /* remove arrow        */
+                -webkit-appearance: none;
+                /* remove arrow Chrome */
+                -moz-appearance: none;
+                /* remove arrow FF     */
+                font-family: "Montserrat-Medium";
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                outline: none; }
+                header .container .mobile-menu .top-mobile-menu .small-menu li select:hover {
+                  background-image: url(../img/arrow3.png);
+                  color: #89c0ff; }
+                header .container .mobile-menu .top-mobile-menu .small-menu li select:focus {
+                  background-image: url(../img/arrow2.png);
+                  color: #89c0ff; }
+                  header .container .mobile-menu .top-mobile-menu .small-menu li select:focus option {
+                    border: none;
+                    outline: none;
+                    background-color: #3a6494;
+                    color: #89c0ff; }
+              header .container .mobile-menu .top-mobile-menu .small-menu li a {
+                color: #fff; }
+                header .container .mobile-menu .top-mobile-menu .small-menu li a:hover {
+                  color: #89c0ff; }
+          header .container .mobile-menu .top-mobile-menu .mobile-logo {
+            display: inline-block;
+            margin-left: 18px;
+            width: 33px;
+            height: 33px;
+            background: url(../img/logo.png) center no-repeat;
+            background-size: cover; }
+          header .container .mobile-menu .top-mobile-menu .user {
+            float: right;
+            background: url(../img/User-mobile.png) center no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-top: 7px; }
+            header .container .mobile-menu .top-mobile-menu .user:hover {
+              background: url(../img/User-mobile-hover.png) center no-repeat; }
+          header .container .mobile-menu .top-mobile-menu button {
+            float: right;
+            position: relative;
+            width: 29px;
+            height: 26px;
+            margin: 3px 23px 0 0;
+            border: none;
+            background-color: transparent;
+            background-image: url(../img/shopping.png);
+            background-position: center;
+            background-repeat: no-repeat; }
+            header .container .mobile-menu .top-mobile-menu button div {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 17px;
+              height: 17px;
+              background-color: #3393ff;
+              font-family: "Montserrat-Medium";
+              font-size: 9px;
+              color: #fff;
+              line-height: 13px;
+              border: 2px solid #fff;
+              border-radius: 50%;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+            header .container .mobile-menu .top-mobile-menu button:hover, header .container .mobile-menu .top-mobile-menu button:focus {
+              outline: none; }
+        header .container .mobile-menu form {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          margin-top: 14px;
+          width: 100%; }
+          header .container .mobile-menu form input:hover, header .container .mobile-menu form input:focus {
+            outline: none; }
+          header .container .mobile-menu form input:first-of-type {
+            width: 55px;
+            background-color: #fff;
+            border: none;
+            border-radius: 3px 0 0 3px;
+            height: 46px;
+            background-image: url(../img/Search-mobile.png);
+            background-position: center;
+            background-repeat: no-repeat; }
+          header .container .mobile-menu form input:last-of-type {
+            width: calc(100% - 55px);
+            background-color: #fff;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            height: 46px;
+            font-family: "Montserrat-Regular";
+            font-size: 13px;
+            color: #bcbcbc; }
+            header .container .mobile-menu form input:last-of-type::-webkit-input-placeholder {
+              font-family: "Montserrat-Regular";
+              font-size: 13px;
+              color: #bcbcbc; }
+            header .container .mobile-menu form input:last-of-type:-moz-placeholder {
+              font-family: "Montserrat-Regular";
+              font-size: 13px;
+              color: #bcbcbc; }
+            header .container .mobile-menu form input:last-of-type::-moz-placeholder {
+              font-family: "Montserrat-Regular";
+              font-size: 13px;
+              color: #bcbcbc; }
+            header .container .mobile-menu form input:last-of-type:-ms-input-placeholder {
+              font-family: "Montserrat-Regular";
+              font-size: 13px;
+              color: #bcbcbc; }
+      header .container .nav {
+        margin-top: 23px; }
+        header .container .nav .dropdown {
+          right: -17px;
+          top: 41px; }
+          header .container .nav .dropdown a {
+            font-size: 12px; }
+        header .container .nav .menu {
+          padding-right: 0; }
+          header .container .nav .menu li {
+            margin-right: 19px; }
+            header .container .nav .menu li:last-child {
+              margin-right: 0; }
+            header .container .nav .menu li a {
+              font-size: 12px;
+              background-image: none;
+              padding-right: 0; }
+            header .container .nav .menu li ul {
+              width: auto; }
+              header .container .nav .menu li ul li {
+                margin: 0; }
+
+  footer .container {
+    padding: 30px 10px 20px; }
+    footer .container .copyright {
+      font-size: 11px; }
+
+  .pagination {
+    margin-top: 22px; }
+    .pagination a {
+      display: none !important; }
+    .pagination button {
+      display: block; }
+
+  .content {
+    padding: 0 0 27px; }
+    .content .container {
+      padding: 0 10px 50px; }
+      .content .container h1 {
+        margin: 20px 0 0; }
+      .content .container .accordion {
+        padding-left: 20px; }
+        .content .container .accordion:after {
+          right: 18px; }
+      .content .container .acord-cont .accordion {
+        min-height: 41px;
+        height: auto;
+        line-height: 18px;
+        padding: 10px 50px 10px 20px; }
+        .content .container .acord-cont .accordion:after {
+          right: 14px; }
+      .content .container .acord-cont .active:after {
+        right: 14px; }
+      .content .container .info {
+        padding: 20px 0 0 20px; }
+        .content .container .info .all-ships .ships .list .country {
+          float: none;
+          margin-bottom: 25px; }
+        .content .container .info .all-ships .ships .list .days {
+          float: left;
+          text-align: left; }
+      .content .container .line:last-of-type {
+        display: none; }
+
+  .order {
+    padding: 25px 0 40px; }
+    .order .container {
+      padding: 0 10px; }
+      .order .container h1 {
+        text-align: center; }
+      .order .container .tab button {
+        font-size: 14px; }
+      .order .container .tabcontent .order-info {
+        margin-bottom: 0; }
+        .order .container .tabcontent .order-info .title .item {
+          width: 53%; }
+          .order .container .tabcontent .order-info .title .item:first-of-type, .order .container .tabcontent .order-info .title .item:nth-of-type(3) {
+            width: 45%; }
+          .order .container .tabcontent .order-info .title .item h3 {
+            font-size: 13px; }
+          .order .container .tabcontent .order-info .title .item p {
+            font-size: 11px; }
+        .order .container .tabcontent .order-info .buy {
+          position: relative; }
+          .order .container .tabcontent .order-info .buy .buy-title {
+            position: static; }
+            .order .container .tabcontent .order-info .buy .buy-title .but-groupe {
+              position: absolute;
+              display: inline-block;
+              width: 57%;
+              top: initial;
+              bottom: 16px;
+              right: -31px; }
+              .order .container .tabcontent .order-info .buy .buy-title .but-groupe button {
+                height: auto;
+                border: none;
+                font-family: "Montserrat-SemiBold";
+                font-size: 11px;
+                color: #21456d;
+                text-transform: uppercase;
+                background-color: transparent; }
+          .order .container .tabcontent .order-info .buy .article .photo {
+            width: 87px;
+            height: 87px;
+            margin-right: 15px;
+            margin-bottom: 15px; }
+          .order .container .tabcontent .order-info .buy .article .article-info {
+            position: relative;
+            top: -9px; }
+            .order .container .tabcontent .order-info .buy .article .article-info h3 {
+              font-size: 12px; }
+            .order .container .tabcontent .order-info .buy .article .article-info p {
+              font-size: 12px;
+              margin-top: 14px; }
+          .order .container .tabcontent .order-info .buy .article .price {
+            float: left;
+            width: 100%; }
+            .order .container .tabcontent .order-info .buy .article .price p {
+              text-align: left;
+              padding-left: 10px; }
+          .order .container .tabcontent .order-info .buy .article:last-of-type {
+            padding-bottom: 0 !important; }
+
+  .wishlist {
+    padding: 20px 0; }
+    .wishlist .container {
+      padding: 0 10px; }
+      .wishlist .container h1 {
+        width: initial;
+        margin-bottom: 15px; }
+      .wishlist .container .edit {
+        float: none;
+        background: none;
+        padding-left: 0;
+        margin: 0 0 15px 25px; }
+      .wishlist .container .bord {
+        border: none; }
+        .wishlist .container .bord .article-wish {
+          position: relative;
+          padding: 0;
+          border: none;
+          margin-bottom: 45px; }
+          .wishlist .container .bord .article-wish:last-of-type {
+            margin-bottom: 0; }
+          .wishlist .container .bord .article-wish img {
+            width: 80px;
+            height: 110px;
+            margin-bottom: 20px; }
+          .wishlist .container .bord .article-wish .article-wish-info {
+            display: block; }
+          .wishlist .container .bord .article-wish button {
+            position: absolute;
+            width: 170px;
+            bottom: -5px; }
+          .wishlist .container .bord .article-wish textarea {
+            padding: 10px 17px;
+            height: 63px; }
+          .wishlist .container .bord .article-wish .but {
+            width: 100px;
+            margin: 20px 14px 0 0; }
+            .wishlist .container .bord .article-wish .but button {
+              position: static; }
+              .wishlist .container .bord .article-wish .but button:last-of-type {
+                margin: 0; }
+      .wishlist .container .pagination {
+        margin-top: 50px; }
+
+  .contact {
+    padding: 20px 0; }
+    .contact .container {
+      padding: 0 10px; }
+      .contact .container h1 {
+        margin-bottom: 15px; }
+      .contact .container p {
+        margin-bottom: 20px; }
+      .contact .container input,
+      .contact .container select,
+      .contact .container textarea {
+        margin: 5px 0 15px; }
+      .contact .container button {
+        margin: 0 auto 15px; }
+
+  .adress {
+    padding: 20px 0; }
+    .adress .container {
+      padding: 0 10px; }
+      .adress .container .text {
+        margin-bottom: 25px; }
+        .adress .container .text h1 {
+          margin-bottom: 20px; }
+        .adress .container .text p:last-of-type {
+          margin-bottom: 25px; }
+      .adress .container .info-block {
+        margin-bottom: 30px; }
+        .adress .container .info-block .person-info {
+          height: auto;
+          padding: 15px; }
+          .adress .container .info-block .person-info h3 {
+            margin-bottom: 20px; }
+          .adress .container .info-block .person-info p:last-of-type {
+            margin-bottom: 40px; }
+          .adress .container .info-block .person-info button {
+            margin-left: 6px; }
+
+  .adress-form {
+    padding: 20px 0; }
+    .adress-form .container {
+      padding: 0 10px; }
+      .adress-form .container h1 {
+        margin-bottom: 15px; }
+      .adress-form .container p {
+        margin-bottom: 20px; }
+      .adress-form .container input,
+      .adress-form .container select,
+      .adress-form .container textarea {
+        margin: 5px 0 15px; }
+      .adress-form .container button {
+        display: block;
+        margin: 0 auto 15px; }
+        .adress-form .container button:last-of-type {
+          margin-bottom: 0; }
+
+  .pass {
+    padding: 20px 0; }
+    .pass .container {
+      padding: 0 10px; }
+      .pass .container h1 {
+        margin-bottom: 15px; }
+      .pass .container input {
+        margin: 5px 0 15px; }
+      .pass .container button {
+        width: 215px;
+        margin: 0 auto; }
+
+  .person {
+    padding: 20px 0; }
+    .person .container {
+      padding: 0 10px; }
+      .person .container h1 {
+        margin-bottom: 15px; }
+      .person .container input {
+        margin: 5px 0 15px; }
+      .person .container .radio {
+        margin-bottom: 15px; }
+        .person .container .radio label {
+          margin-right: 30px; }
+      .person .container .birth {
+        margin-bottom: 20px; }
+        .person .container .birth select:first-of-type {
+          width: 62px;
+          margin-right: 18px; }
+        .person .container .birth select:nth-of-type(2) {
+          width: 112px; }
+        .person .container .birth select:last-of-type {
+          width: 82px; }
+      .person .container .check {
+        margin-bottom: 15px; }
+        .person .container .check p {
+          display: inline-block;
+          margin: 0 25px 0 0; }
+      .person .container button {
+        display: block;
+        margin: 0 auto 15px; }
+        .person .container button:last-of-type {
+          margin-bottom: 0; } }
+
+/*# sourceMappingURL=style.css.map */
